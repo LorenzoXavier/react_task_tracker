@@ -17,6 +17,12 @@
       "day": "app",
       "reminder": true,
       "id": 3
+    },
+    {
+      "text": "dasd",
+      "day": "asdasd",
+      "reminder": false,
+      "id": 4
     }
   ]
 }
