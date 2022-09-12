@@ -10,7 +10,13 @@
       "id": 2,
       "text": "Outside shopping",
       "day": "Feb 10th at 2.30pm",
-      "reminder": false
+      "reminder": true
+    },
+    {
+      "text": "from",
+      "day": "app",
+      "reminder": true,
+      "id": 3
     }
   ]
 }
