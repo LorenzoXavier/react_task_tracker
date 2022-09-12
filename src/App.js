@@ -1,5 +1,7 @@
 import Header from "./components/Header";
 import Tasks from "./components/Tasks";
+import AddTask from "./components/addTask";
+
 import { useState } from 'react'
 
 const App = () => { 
@@ -24,6 +26,11 @@ const App = () => {
     },
   ])
 
+  // Add task
+  const addTask = (task) => {
+    console.log(task)
+  }
+
   // delete task
   const deleteTask = (id) => {
     setTasks(tasks.filter((task) => task.id !== id))
@@ -37,6 +44,7 @@ const App = () => {
   return (
     <div className="container">
       <Header title={ 'Title entered in app' }/>
+      <AddTask onAdd={addTask}/>
       {tasks.length > 0 ? <Tasks tasks={tasks} onDelete={deleteTask} onToggle={toggleReminder}/> : 'No Tasks to show'}
     </div>
   );
